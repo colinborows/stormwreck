@@ -1,0 +1,373 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+*{
+  font-family: 'VT323', sans-serif;
+  color: white;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+}
+
+header{
+  /* border: greenyellow solid 1px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px 80px;
+  min-width: 960px;
+  width: 1080px;
+}
+
+.welcome{
+  max-width: 960px;
+
+}
+
+.mainSect{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+
+
+h1{
+  color: gold;
+}
+
+
+nav li{
+ font-size: 22px; 
+ list-style-type: none;
+}
+
+
+
+a{
+  text-decoration: none;
+  color: red;
+}
+
+a:hover{
+  color: cyan;
+}
+
+nav{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fixed{
+  /* border: 2px solid red; */
+  width: 300px;
+}
+
+.fixedAdventure{
+  width: 400px;
+}
+
+main{
+  /* border: 2px solid blue; */
+  padding: 20px 200px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+h2{
+  color: gold;
+  text-align: center;
+  font-size: 40px;
+}
+
+h3{
+  font-size: 22px;
+}
+
+h4{
+  font-size: 30px;
+  color: gold; 
+}
+
+section{
+  /* font-size: 22px; */
+  /* width: 66%; */
+  /* text-align: justify; */
+}
+
+section ul{
+  
+}
+
+section li{
+  padding: 20px 0;
+  font-size: 22px;
+}
+
+section h3{
+  color: orange;
+}
+
+.centered{
+  text-align: center;
+}
+
+.sessions{
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  /* border: solid springgreen 2px; */
+}
+
+
+
+.sessions a{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sessionsCont{
+  padding: 0 36px 0 0;
+  text-align: center;
+  border: gold solid 2px;
+}
+
+.charactersMain{
+  display: flex;
+  flex-direction: column;
+}
+
+.imgContainer{
+  display: flex;
+  justify-content: center;
+
+}
+
+ .column div img{
+  width: 90%;
+  max-width: 400px;
+}
+
+.column{
+  width: 70%;
+  min-width: 960px;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: space-around;
+}
+
+.characters{
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  width: 40%;
+}
+
+span{
+  font-size: 20px;
+}
+
+div section{
+  padding: 0 0 40px 0;
+}
+
+.sessionCont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+}
+
+.charactersCont{
+  border: solid gold 2px;
+  /* width: 100%; */
+  padding: 0 0 0px 0;
+  margin: 0px 40px 40px 40px;
+  width: auto;
+}
+.characterList{
+  /* border: solid slateblue 1px; */
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  align-items: center;
+  padding: 0px 40px;
+  font-size: 22px;
+
+  width: 100%;
+}
+
+.characterList li{
+  padding: 0 0 10px 0;
+}
+
+.characterList li a{
+  color: gold;
+  
+}
+
+.characterList li a:hover{
+  color: cyan;
+}
+
+
+.locations{
+  max-width: 960px;
+}
+
+.locationCont{
+  max-width: 960px;
+}
+
+.locationCont img{
+  width: 100%;
+}
+
+.locations section{
+  padding: 0px 0px 40px 0;
+}
+
+.locations h3{
+  font-size: 30px;
+}
+
+.maps {
+  max-width: 960px;
+}
+
+
+.maps .imgCont img{
+  width: 100%;
+}
+
+.maps li{
+  padding: 0px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+@media (max-width: 600px) {
+  body {
+    
+  }
+  
+  header{
+    display: flex;
+    max-width: 600px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  h1{
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+  }
+  nav{
+    flex-direction: column;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
+  h4{
+    font-size: 20px;
+  }
+
+  main{
+    max-width: 600px;
+    margin: 0px;
+    padding: 0;
+  }
+
+  .dragonCont{
+    width: 90%; 
+  }
+
+  .fixed{
+    width: 100%;
+  }
+
+  .mainSect{
+    width: 90%;
+  }
+
+  .sessionCont{
+    width: 100%;
+  }
+
+  .sessionCont h4{
+    padding: 0 10px;
+  }
+
+  .sessionCont li{
+    font-size: 18px;
+    padding: 0px 20px 5px 0;
+  }
+
+  .charactersMain{
+    width: 100%;
+  }
+
+  .column{
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .characters{
+    width: 20%;
+  }
+
+  .locations{
+    width: 90%;
+  }
+
+  .maps{
+    width: 90%;
+  }
+
+  .maps li{
+    padding: 0px;
+  }
+}
